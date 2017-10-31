@@ -107,9 +107,9 @@ public class TTT {
     }
 
     public boolean checkDiagonal(int i, int j) {
-//        if (i != j || i != boardWidth - 1 - j) {
-//            return false;
-//        }
+        if (i != j || i != boardWidth - 1 - j) {
+            return false;
+        }
         char p = board[i][j];
         boolean diagonalNW = true;
         for (int k = 0; k < boardWidth; k++) {
