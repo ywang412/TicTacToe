@@ -11,7 +11,7 @@ public class TTT {
     private char[] players;
     private int currentPlayer;
     private int winner;
-    private Set<Integer> remainingPostions = new HashSet<Integer>();
+    private Set<Integer> remainingPositions = new HashSet<Integer>();
     private int boardWidth;
 
 
@@ -22,7 +22,7 @@ public class TTT {
             for (int i = 0; i < boardWidth; i++) {
                 for (int j = 0; j < boardWidth; j++) {
                     board[i][j] = '#';
-                    remainingPostions.add(i * boardWidth + j);
+                    remainingPositions.add(i * boardWidth + j);
                 }
             }
             players = new char[]{'X', 'O'};
@@ -50,15 +50,15 @@ public class TTT {
     }
 
     public boolean isBoardFull() {
-        return remainingPostions.size() == 0;
+        return remainingPositions.size() == 0;
     }
 
     public boolean userPlay() {
         Random rand = new Random();
-        int rn = rand.nextInt(remainingPostions.size());
-        List<Integer> list = new ArrayList(remainingPostions);
+        int rn = rand.nextInt(remainingPositions.size());
+        List<Integer> list = new ArrayList(remainingPositions);
         int position = list.get(rn);
-        remainingPostions.remove(position);
+        remainingPositions.remove(position);
         int i = position / boardWidth;
         int j = position % boardWidth;
         board[i][j] = players[currentPlayer];

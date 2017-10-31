@@ -14,7 +14,8 @@ public class Main {
             int boardSize = Integer.parseInt(s);
             TTT ticTacToe = new TTT(boardSize);
             ticTacToe.startGame();
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             System.out.println("Illegal board size" );
         }
         finally {
