@@ -3,7 +3,7 @@ package com.sample.tictactoe;
 import java.util.*;
 
 /**
- * Created by swengineer on 10/31/17.
+ * Created by yu wang on 10/31/17.
  */
 public class TTT {
 

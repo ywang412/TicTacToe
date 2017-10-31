@@ -8,7 +8,7 @@ import java.util.Scanner;
 import static org.junit.Assert.*;
 
 /**
- * Created by swengineer on 10/31/17.
+ * Created by yu wang on 10/31/17.
  */
 public class MainTest {
     @org.junit.Before
